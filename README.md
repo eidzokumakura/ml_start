@@ -16,7 +16,7 @@
         <tr>
             <th>Классификатор</th>
             <th>Test Loss</th>
-            <th>Test accuracy</th>
+            <th>Test Accuracy</th>
         </tr>
         <tr>
             <td>ResNet-18</td>
