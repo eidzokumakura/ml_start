@@ -241,4 +241,4 @@ for epoch in range(epochs):
     print(f'\t Val. Loss: {test_loss:.3f} |  Val. Acc: {test_acc*100:.2f}%')
 
     if test_loss < best_loss:
-        torch.save(pretrained_resnet50, "resnet50_best_loss.pth")
+        torch.save(pretrained_resnet50, "run_classifier/resnet50_best_loss.pth")
