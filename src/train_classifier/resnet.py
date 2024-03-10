@@ -16,8 +16,8 @@ transform = transforms.Compose([
       transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
 
-train_path = "../aircrafts_and_ships/train"
-test_path = "../aircrafts_and_ships/test"
+train_path = "../../aircrafts_and_ships/train"
+test_path = "../../aircrafts_and_ships/test"
 
 train_data = dataset.ImageFolder(train_path, transform)
 test_data = dataset.ImageFolder(test_path, transform)
@@ -241,4 +241,4 @@ for epoch in range(epochs):
     print(f'\t Val. Loss: {test_loss:.3f} |  Val. Acc: {test_acc*100:.2f}%')
 
     if test_loss < best_loss:
-        torch.save(pretrained_resnet50, "run_classifier/resnet50_best_loss.pth")
+        torch.save(pretrained_resnet50, "../run_classifier/resnet50_best_loss.pth")
