@@ -1,4 +1,3 @@
-import cv2
 from ultralytics import YOLO
 
 # Load a model
