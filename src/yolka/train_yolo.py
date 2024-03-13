@@ -8,4 +8,4 @@ model = YOLO('yolov8n.pt')  # load a pretrained model (recommended for training)
 
 if __name__ == '__main__':
     # Train the model
-    results = model.train(data=yaml_file, epochs=50, imgsz=640, batch=8)
+    results = model.train(data=yaml_file, epochs=100, imgsz=640, batch=8)
